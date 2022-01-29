@@ -1,0 +1,516 @@
+html {
+  max-width: 100vw;
+  min-height: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#main-menu-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 110vh;
+  background-color: black;
+}
+
+#main-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/originals/82/32/15/8232157f8d4e09717bf71b9a5e7d2929.jpg");
+  background-size: 100% 100%;
+}
+
+#main-menu-play-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100vh;
+  border: solid 2px Gray;
+}
+
+#play-btn {
+  width: 80px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#deck-editor-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.deck-box-button {
+  position: relative;
+  width: 2.5in;
+  height: 2.5in;
+  border-radius: 5px;
+  background-color: black;
+  border: solid 2px Gray;
+  font-size: 10rem;
+  color: lightgrey;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.deck-box-img {
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  width: 2.48in;
+  height: 2.48in;
+  border-radius: 5px;
+  border: solid 2px Gray;
+  clip: rect(26px, 210px, 131px, 30px);
+}
+
+.deck-box-name {
+  max-height: 1in;
+  font-size: 1.5rem;
+  padding-top: 120px;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#main-menu-nav-btn {
+  width: 80px;
+  border-radius: 5px;
+}
+
+#deck-editor-nav-btn {
+  width: 80px;
+  border-radius: 5px;
+}
+
+#profile-nav-btn {
+  width: 80px;
+  border-radius: 5px;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  width: 25vw;
+  background-color: Lightgray;
+  border: solid 2px Gray;
+  padding: 25px;
+}
+
+#query-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 25px;
+}
+
+#query-container-name {
+  width: 100%;
+}
+
+#query-field-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.field {
+  margin: auto 0;
+}
+
+.input {
+  width: 100px;
+  min-width: 25px;
+  height: 20px;
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  padding: 14px 20px 12px 5px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#selection-card-count {
+  width: 85%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#selection-input-name {
+  width: 100%;
+}
+
+.query-name-submit {
+  margin-top: 10px;
+}
+
+#Submit {
+  width: 80px;
+  height: 26px;
+  border-radius: 5px;
+}
+
+.btn {
+  height: 26px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#deck-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+#addDeck {
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 25px;
+  min-width: 3in;
+  min-height: 100%;
+  height: 100vh;
+  background-color: black;
+  border: solid 2px Gray;
+  overflow-y: scroll;
+}
+
+.card-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5in;
+  height: 3.5in;
+  border-radius: 5%;
+  border: 3px solid black;
+  margin: 5px;
+  outline: none;
+}
+
+.card {
+  position: absolute;
+  top: -0px;
+  left: -2px;
+  width: 2.5in;
+  height: 3.5in;
+  border-radius: 5%;
+  /* filter: invert(1); */
+  /* filter: hue-rotate(90deg); */
+}
+
+#selection-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 3in;
+  min-height: 100vh;
+  padding: 25px;
+  background-color: black;
+  border: solid 2px Gray;
+  overflow-y: scroll;
+}
+
+.react-contextmenu-wrapper {
+  width: 2.5in;
+  height: 2.5in;
+}
+
+.contextMenu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+  width: 130px;
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.menuItem {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+#loading-title {
+  position: absolute;
+  top: 75px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+#content-loading-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#loading-img {
+  position: relative;
+  width: 2.5in;
+  height: 3.5in;
+  border-radius: 10px;
+  padding-top: 100px;
+  filter: invert(1);
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.text {
+  position: absolute;
+  top: 300px;
+  width: 20%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#primary-loading-rule {
+  right: calc(70vw);
+}
+
+#secondary-loading-rule {
+  left: calc(70vw);
+}
+
+@keyframes loading {
+  0% {
+    width: 2.5in;
+    height: 3.5in;
+  }
+  50% {
+    width: 5in;
+    height: 7in;
+  }
+  100% {
+    width: 2.5in;
+    height: 3.5in;
+  }
+}
+
+#play-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  background-image: url("https://static.mtga.untapped.gg/static/mtga/background-top.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 255%;
+}
+
+#tracker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#phase-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tracker {
+  width: 50px;
+  height: 50px;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid silver;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#pre-combat-main-phase {
+  padding-bottom: 10px;
+  line-height: 60px;
+}
+
+#combat-phase {
+  font-size: 0.75rem;
+  padding-bottom: 20px;
+  line-height: 70px;
+}
+
+#post-combat-main-phase {
+  padding-bottom: 10px;
+  line-height: 60px;
+}
+
+#battlefield-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+#life-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#life-counter {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: darkgreen;
+}
+
+#life-counter-increment {
+  width: 25px;
+  height: 25px;
+  font-size: 1rem;
+  border-radius: 50%;
+  outline: none;
+}
+
+#life-counter-decrement {
+  width: 25px;
+  height: 25px;
+  font-size: 1rem;
+  border-radius: 50%;
+  outline: none;
+}
+
+#hand-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 29%;
+}
+
+#graveyard-library-exile-container {
+  display: flex;
+  justify-content: center;
+  width: 24%;
+}
+
+#hand-command-container {
+  width: 100%;
+}
+
+#command {
+  position: relative;
+  min-width: calc(2.5in * 0.5);
+  min-height: calc(3.5in * 0.5);
+}
+
+#hand {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+#graveyard {
+  position: relative;
+  min-width: calc(2.5in * 0.5);
+  min-height: calc(3.5in * 0.5);
+}
+
+#library {
+  position: relative;
+  min-width: calc(2.5in * 0.5);
+  min-height: calc(3.5in * 0.5);
+}
+
+#exile {
+  position: relative;
+  min-width: calc(2.5in * 0.5);
+  min-height: calc(3.5in * 0.5);
+}
+
+.card-img {
+  position: absolute;
+  top: calc(0vh);
+  left: calc(0vw);
+  width: calc(2.5in * 0.5);
+  height: calc(3.5in * 0.5);
+  border-radius: 10px;
+  /* filter: invert(1); */
+  /* filter: hue-rotate(90deg); */
+}
